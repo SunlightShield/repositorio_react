@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import Estrellas from "./components/Estrellas";
+import CardQuienSoy from "./components/CardQuienSoy";
+import Experiencias from "./components/Experiencias";
+import CardFlotante from "./components/CardFlotante"
+import Header from "./components/Header";
+import BotonScrollUp from "./components/BotonScrollUp";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <Header />
+      <Estrellas />
+      <div className=" z-10 text-white text-2xl flex justify-center items-center mt-20">
+        <h1>Bienvenido a mi portafolio</h1>
+      </div>
+      <div className="flex justify-center items-center px-4 mt-5" id="quien-soy">
+        <div className="w-full max-w-2xl">
+          <CardQuienSoy />
+        </div>
+      </div>
+      <div className="flex justify-center items-center px-4 mt-5" id="experiencias">
+        <div className="w-full max-w-2xl">
+          <Experiencias />
+        </div>
+      </div>
+      <div className="flex justify-center items-center px-4 mt-5" id="proyectos">
+        <div className="w-full max-w-2xl">
+          <CardFlotante />
+        </div>
+      </div>
+      <BotonScrollUp />
+      <Footer/>
+    </>
   );
 }
 
