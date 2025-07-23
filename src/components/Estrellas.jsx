@@ -1,5 +1,5 @@
 const Estrellas = () => {
-  const estrellas = Array.from({ length: 60 });
+  const estrellas = Array.from({ length: 100 });
 
   return (
     <div className="fixed top-0 left-0 w-screen h-screen -z-10 overflow-hidden pointer-events-none">
