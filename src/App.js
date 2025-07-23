@@ -5,15 +5,18 @@ import CardFlotante from "./components/CardFlotante"
 import Header from "./components/Header";
 import BotonScrollUp from "./components/BotonScrollUp";
 import Footer from "./components/Footer";
+import CardModal from "./components/CardModal";
 
 function App() {
   return (
     <>
      <Header />
       <Estrellas />
-      <div className=" z-10 text-white text-2xl flex justify-center items-center mt-20">
-        <h1>Bienvenido a mi portafolio</h1>
-      </div>
+<div className="z-10 m-20 text-center">
+  <h1 className="text-white text-3xl md:text-4xl font-bold tracking-wide drop-shadow-sm animate-fade-in">
+    Bienvenido a mi <span className="text-blue-400">portafolio</span>
+  </h1>
+</div>
       <div className="flex justify-center items-center px-4 mt-5" id="quien-soy">
         <div className="w-full max-w-2xl">
           <CardQuienSoy />
@@ -27,6 +30,11 @@ function App() {
       <div className="flex justify-center items-center px-4 mt-5" id="proyectos">
         <div className="w-full max-w-2xl">
           <CardFlotante />
+        </div>
+      </div>
+      <div className="flex justify-center items-center px-4 mt-5" id="certificaciones">
+        <div className="w-full max-w-2xl">
+          <CardModal />
         </div>
       </div>
       <BotonScrollUp />

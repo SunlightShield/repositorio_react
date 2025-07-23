@@ -57,6 +57,12 @@ Nuxt</li>
 
     return (
         <div className="bg-white/10 backdrop-blur-md rounded-xl border border-white/20 shadow-lg p-6 text-white">
+
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight drop-shadow">
+                🚀 <span className="text-blue-400">Mi camino</span> como desarrollador
+            </h2>
+
+<div className='-ml-20 mr-10'>
             <Timeline
                 value={eventos}
                 content={(item) => (
@@ -71,7 +77,7 @@ Nuxt</li>
             />
 
         </div>
-
+</div>
     );
 };
 
